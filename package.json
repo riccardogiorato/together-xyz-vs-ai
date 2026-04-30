@@ -1,0 +1,22 @@
+{
+  "name": "together-xyz-vs-ai",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "step1": "bun run src/step1-dns.ts",
+    "step2": "bun run src/step2-headers.ts",
+    "step3": "bun run src/step3-loadtest.ts",
+    "step4": "bun run src/step4-sdk-baseurl.ts",
+    "all": "bun run src/step1-dns.ts && bun run src/step2-headers.ts && bun run src/step3-loadtest.ts && bun run src/step4-sdk-baseurl.ts"
+  },
+  "dependencies": {
+    "together-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
