@@ -2,7 +2,7 @@ export const HOSTS = ["api.together.xyz", "api.together.ai"] as const;
 export type Host = (typeof HOSTS)[number];
 
 export const DEFAULT_MODEL =
-  process.env.TOGETHER_MODEL ?? "meta-llama/Llama-3.2-3B-Instruct-Turbo";
+  process.env.TOGETHER_MODEL ?? "zai-org/GLM-5.1";
 
 export function requireApiKey(): string {
   const key = process.env.TOGETHER_API_KEY;
